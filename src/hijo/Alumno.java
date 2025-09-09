@@ -53,10 +53,5 @@ public class Alumno extends Persona{  // <-- extension de la clase padre: Person
 			   "Nota 1 : " + nota1 + "\n" +
 			   "Nota 2 : " + nota2 + "\n" +
 			   "Nota 3 : " + nota3 + "\n";
-	}
-	
-	
-	
-	
-	
+	}	
 }
