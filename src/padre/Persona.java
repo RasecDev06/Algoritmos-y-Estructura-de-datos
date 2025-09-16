@@ -37,7 +37,12 @@ public class Persona {
 	}
 
 	public void setEdad(int edad) {
-		this.edad = edad;
+		if(edad > 0) {
+			this.edad = edad;
+		}else {
+			System.out.println("Ingrese una edad positiva");
+		}
+		
 	}
 	
 	//Operaciones publicas:
@@ -45,7 +50,7 @@ public class Persona {
 		return nombre + "." + apellido + "@cibertec.edu.pe";
 	}
 	
-	public String datosDeLaPersona() {
+	public String datosCompletos() {
 		return "Nombre : " + nombre + "\n" +
 			   "Apellido : " + apellido + "\n" +
 			   "Edad : " + edad;	

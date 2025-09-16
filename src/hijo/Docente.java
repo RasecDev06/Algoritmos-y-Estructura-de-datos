@@ -38,7 +38,7 @@ public class Docente extends Persona{ // <-- extension de la clase padre: Person
 	}
 	
 	public String datosCompletos() {
-		return datosDeLaPersona() + "\n" +
+		return super.datosCompletos() + "\n" + //Se redifinio con super
 		"Horas : " + horas + "\n" +
 		"Tarifa por hora : " + tarifaPorHora;		
 	}	

@@ -23,8 +23,14 @@ public class Alumno extends Persona{  // <-- extension de la clase padre: Person
 		return nota1;
 	}
 
-	public void setNota1(int nota1) {
+	public void setNota1(int nota1) {		//Valida que la nota este en un rango del 0 al 20
+		if(nota1 >= 0 && nota1 <= 20) {
+			this.nota1 = nota1;
+		}else {
+				System.out.println("Ingrese una nota de 0 a 20");
+		}
 		this.nota1 = nota1;
+		
 	}
 
 	public int getNota2() {
@@ -32,6 +38,11 @@ public class Alumno extends Persona{  // <-- extension de la clase padre: Person
 	}
 
 	public void setNota2(int nota2) {
+		if(nota2 >= 0 && nota2 <= 20) {
+			this.nota2 = nota2;
+		}else {
+				System.out.println("Ingrese una nota de 0 a 20");
+		}
 		this.nota2 = nota2;
 	}
 
@@ -40,6 +51,11 @@ public class Alumno extends Persona{  // <-- extension de la clase padre: Person
 	}
 
 	public void setNota3(int nota3) {
+		if(nota3 >= 0 && nota3 <= 20) {
+			this.nota3 = nota3;
+		}else {
+				System.out.println("Ingrese una nota de 0 a 20");
+		}
 		this.nota3 = nota3;
 	}
 	
@@ -49,7 +65,7 @@ public class Alumno extends Persona{  // <-- extension de la clase padre: Person
 	}
 	
 	public String datosCompletos() {
-		return datosDeLaPersona() + "\n" +
+		return super.datosCompletos() + "\n" + //Se redifinio con super
 			   "Nota 1 : " + nota1 + "\n" +
 			   "Nota 2 : " + nota2 + "\n" +
 			   "Nota 3 : " + nota3 + "\n";
