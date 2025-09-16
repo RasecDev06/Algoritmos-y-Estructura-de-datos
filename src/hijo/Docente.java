@@ -3,6 +3,11 @@ package hijo;
 import padre.Persona;
 
 public class Docente extends Persona{ // <-- extension de la clase padre: Persona
+	
+	public String identificacion() {	//Agregando el metodo abstracto identidicacion
+		return ">>> Docente";
+	}
+	
 	//Atributos privados:
 	private int horas;
 	private double tarifaPorHora;

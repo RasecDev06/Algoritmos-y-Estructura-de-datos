@@ -1,6 +1,9 @@
 package padre;
 
-public class Persona {
+public abstract class Persona {   // Convirtiendo la clase Persona en clase abstracta
+	
+	public abstract String identificacion();   //Agregando un metodo bastracto
+	
 	//Atributos privados:
 	private String nombre;
 	private String apellido;

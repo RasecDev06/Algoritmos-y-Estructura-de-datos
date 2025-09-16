@@ -70,8 +70,8 @@ public class ejemploC extends JFrame implements ActionListener{
 	}
 	
 	protected void actionPerformedBtnProcesar(ActionEvent arg0) {
-		Persona p = new Persona("Juan", "Matos",18);
-		listado(p);
+		//Persona p = new Persona("Juan", "Matos",18);
+		//listado(p);
 		
 		Alumno a = new Alumno("Marco", "Salazar", 23, 14, 16, 15);
 		listado(a);
